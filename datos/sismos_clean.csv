@@ -1,0 +1,243 @@
+fecha,hora,latitud,longitud,magnitud,magnitud_tipo,profundidad_km,municipio,intensidad_sitio,intensidad_max,anio,mes,municipio_base,clase_profundidad,riesgo_sismico
+1826-06-17,22:30,5.01,-73.59,6.5,MW,15.0,"Socorro, Santander",3.0,8.0,1826,6,Socorro,somero,Bajo
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Simacota, Santander",6.0,10.0,1875,5,Simacota,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Puente Nacional, Santander",6.0,10.0,1875,5,Puente Nacional,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Guaca, Santander",6.0,10.0,1875,5,Guaca,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Oiba, Santander",6.0,10.0,1875,5,Oiba,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Suratá, Santander",7.0,10.0,1875,5,Suratá,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Charalá, Santander",6.0,10.0,1875,5,Charalá,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Matanza, Santander",7.0,10.0,1875,5,Matanza,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Rionegro, Santander",4.0,10.0,1875,5,Rionegro,somero,Medio
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Bucaramanga, Santander",6.0,10.0,1875,5,Bucaramanga,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Málaga, Santander",7.0,10.0,1875,5,Málaga,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Piedecuesta, Santander",6.0,10.0,1875,5,Piedecuesta,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Socorro, Santander",5.0,10.0,1875,5,Socorro,somero,Medio
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Ocamonte, Santander",6.0,10.0,1875,5,Ocamonte,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Vélez, Santander",6.0,10.0,1875,5,Vélez,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Molagavita, Santander",7.0,10.0,1875,5,Molagavita,somero,Alto
+1875-05-18,11:15,7.86,-72.42,6.8,MW,15.0,"Chima, Santander",6.0,10.0,1875,5,Chima,somero,Alto
+1917-08-31,06:36,3.79,-73.65,7.0,MW,15.0,"Bucaramanga, Santander",3.0,9.0,1917,8,Bucaramanga,somero,Bajo
+1917-08-31,06:36,3.79,-73.65,7.0,MW,15.0,"Socorro, Santander",3.0,9.0,1917,8,Socorro,somero,Bajo
+1923-12-22,04:56,4.56,-73.51,5.9,MW,15.0,"Socorro, Santander",4.0,8.0,1923,12,Socorro,somero,Medio
+1923-12-22,04:56,4.56,-73.51,5.9,MW,15.0,"Bucaramanga, Santander",3.0,8.0,1923,12,Bucaramanga,somero,Bajo
+1928-11-01,11:08,4.95,-73.097,5.9,MW,15.0,"Bucaramanga, Santander",3.0,8.0,1928,11,Bucaramanga,somero,Bajo
+1938-02-04,21:23,4.68,-75.69,7.0,MS,150.0,"Bucaramanga, Santander",5.0,8.0,1938,2,Bucaramanga,intermedio,Medio
+1950-07-08,21:35,7.6,-72.86,6.2,MW,10.0,"Bucaramanga, Santander",6.0,9.0,1950,7,Bucaramanga,somero,Alto
+1950-07-08,21:35,7.6,-72.86,6.2,MW,10.0,"La Corcova, Tona-Santander",7.0,9.0,1950,7,Tona,somero,Alto
+1950-07-08,21:35,7.6,-72.86,6.2,MW,10.0,"Mogotes, Santander",5.0,9.0,1950,7,Mogotes,somero,Medio
+1950-07-08,21:35,7.6,-72.86,6.2,MW,10.0,"San Gil, Santander",5.0,9.0,1950,7,San Gil,somero,Medio
+1950-07-08,21:35,7.6,-72.86,6.2,MW,10.0,"California, Santander",7.0,9.0,1950,7,California,somero,Alto
+1950-07-08,21:35,7.6,-72.86,6.2,MW,10.0,"Cachirí, Suratá-Santander",7.0,9.0,1950,7,Suratá,somero,Alto
+1950-07-08,21:35,7.6,-72.86,6.2,MW,10.0,"Suratá, Santander",7.0,9.0,1950,7,Suratá,somero,Alto
+1950-07-08,21:35,7.6,-72.86,6.2,MW,10.0,"Matanza, Santander",7.0,9.0,1950,7,Matanza,somero,Alto
+1950-07-08,21:35,7.6,-72.86,6.2,MW,10.0,"Vetas, Santander",6.0,9.0,1950,7,Vetas,somero,Alto
+1950-07-08,21:35,7.6,-72.86,6.2,MW,10.0,"Cuesta Rica, Rionegro-Santander",7.0,9.0,1950,7,Rionegro,somero,Alto
+1950-07-08,21:35,7.6,-72.86,6.2,MW,10.0,"Charalá, Santander",5.0,9.0,1950,7,Charalá,somero,Medio
+1957-04-21,16:12,6.868,-72.095,6.6,MW,25.0,"Bucaramanga, Santander",6.0,7.0,1957,4,Bucaramanga,somero,Alto
+1957-04-21,16:12,6.868,-72.095,6.6,MW,25.0,"Matanza, Santander",6.0,7.0,1957,4,Matanza,somero,Alto
+1957-04-21,16:12,6.868,-72.095,6.6,MW,25.0,"Piedecuesta, Santander",6.0,7.0,1957,4,Piedecuesta,somero,Alto
+1957-04-21,16:12,6.868,-72.095,6.6,MW,25.0,"Barrancabermeja, Santander",5.0,7.0,1957,4,Barrancabermeja,somero,Medio
+1957-04-21,16:12,6.868,-72.095,6.6,MW,25.0,"Floridablanca, Santander",6.0,7.0,1957,4,Floridablanca,somero,Alto
+1957-04-21,16:12,6.868,-72.095,6.6,MW,25.0,"Málaga, Santander",7.0,7.0,1957,4,Málaga,somero,Alto
+1957-04-21,16:12,6.868,-72.095,6.6,MW,25.0,"Simacota, Santander",5.0,7.0,1957,4,Simacota,somero,Medio
+1961-06-16,05:33,8.88,-73.48,6.5,MS,114.0,"Bucaramanga, Santander",5.0,7.0,1961,6,Bucaramanga,intermedio,Medio
+1962-07-30,15:18,5.17,-76.35,6.5,MW,64.0,"Barrancabermeja, Santander",5.0,8.0,1962,7,Barrancabermeja,intermedio_superior,Medio
+1962-07-30,15:18,5.17,-76.35,6.5,MW,64.0,"Bucaramanga, Santander",5.0,8.0,1962,7,Bucaramanga,intermedio_superior,Medio
+1967-02-09,10:24,2.9,-74.8,7.0,MW,35.0,"Socorro, Santander",3.0,10.0,1967,2,Socorro,intermedio_superior,Bajo
+1967-02-09,10:24,2.9,-74.8,7.0,MW,35.0,"Bucaramanga, Santander",3.0,10.0,1967,2,Bucaramanga,intermedio_superior,Bajo
+1967-02-09,10:24,2.9,-74.8,7.0,MW,35.0,"Barrancabermeja, Santander",5.0,10.0,1967,2,Barrancabermeja,intermedio_superior,Medio
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Contratación, Santander",8.0,8.0,1967,7,Contratación,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"San Gil, Santander",6.0,8.0,1967,7,San Gil,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"San Joaquín, Santander",8.0,8.0,1967,7,San Joaquín,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Güepsa, Santander",7.0,8.0,1967,7,Güepsa,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Rionegro, Santander",7.0,8.0,1967,7,Rionegro,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Guapotá, Santander",6.0,8.0,1967,7,Guapotá,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Galán, Santander",8.0,8.0,1967,7,Galán,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Girón, Santander",7.0,8.0,1967,7,Girón,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Palmar, Santander",7.0,8.0,1967,7,Palmar,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Gámbita, Santander",6.0,8.0,1967,7,Gámbita,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Floridablanca, Santander",6.0,8.0,1967,7,Floridablanca,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Piedecuesta, Santander",7.0,8.0,1967,7,Piedecuesta,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Curití, Santander",6.0,8.0,1967,7,Curití,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"El Playón, Santander",7.0,8.0,1967,7,El Playón,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Páramo, Santander",6.0,8.0,1967,7,Páramo,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"El Paujil, Matanza-Santander",8.0,8.0,1967,7,Matanza,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"El Guacamayo, Santander",8.0,8.0,1967,7,El Guacamayo,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"San Vicente de Chucurí, Santander",7.0,8.0,1967,7,San Vicente de Chucurí,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Guadalupe, Santander",7.0,8.0,1967,7,Guadalupe,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Guane, Barichara-Santander",6.0,8.0,1967,7,Barichara,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Puente Nacional, Santander",6.0,8.0,1967,7,Puente Nacional,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Llano de Palmas, Rionegro-Santander",7.0,8.0,1967,7,Rionegro,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"California, Santander",7.0,8.0,1967,7,California,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Chima, Santander",7.0,8.0,1967,7,Chima,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Zapatoca, Santander",8.0,8.0,1967,7,Zapatoca,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Aratoca, Santander",6.0,8.0,1967,7,Aratoca,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Vélez, Santander",7.0,8.0,1967,7,Vélez,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Los Santos, Santander",7.0,8.0,1967,7,Los Santos,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Valle de San José, Santander",6.0,8.0,1967,7,Valle de San José,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Barichara, Santander",6.0,8.0,1967,7,Barichara,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Barrancabermeja, Santander",7.0,8.0,1967,7,Barrancabermeja,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"La Paz, Santander",7.0,8.0,1967,7,La Paz,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Tona, Santander",7.0,8.0,1967,7,Tona,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Matanza, Santander",7.0,8.0,1967,7,Matanza,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Betulia, Santander",8.0,8.0,1967,7,Betulia,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Suratá, Santander",6.0,8.0,1967,7,Suratá,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Bolívar, Santander",6.0,8.0,1967,7,Bolívar,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Suaita, Santander",6.0,8.0,1967,7,Suaita,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Sucre, Santander",6.0,8.0,1967,7,Sucre,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Cabrera, Santander",7.0,8.0,1967,7,Cabrera,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Charta, Santander",6.0,8.0,1967,7,Charta,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Santa Cruz, Matanza-Santander",7.0,8.0,1967,7,Matanza,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Hato, Santander",8.0,8.0,1967,7,Hato,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Mogotes, Santander",8.0,8.0,1967,7,Mogotes,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Jesús María, Santander",6.0,8.0,1967,7,Jesús María,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"La Aguada, Rionegro-Santander",8.0,8.0,1967,7,Rionegro,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Oiba, Santander",7.0,8.0,1967,7,Oiba,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"La Corcova, Tona-Santander",7.0,8.0,1967,7,Tona,profundo,Alto
+1967-07-29,05:24,6.747,-73.03,6.8,MW,161.0,"Bucaramanga, Santander",7.0,8.0,1967,7,Bucaramanga,profundo,Alto
+1973-08-30,13:25,7.14,-72.76,6.3,MW,180.0,"Floridablanca, Santander",6.0,8.0,1973,8,Floridablanca,profundo,Alto
+1973-08-30,13:25,7.14,-72.76,6.3,MW,180.0,"La Fuente, Zapatoca-Santander",6.0,8.0,1973,8,Zapatoca,profundo,Alto
+1973-08-30,13:25,7.14,-72.76,6.3,MW,180.0,"Betulia, Santander",6.5,8.0,1973,8,Betulia,profundo,Alto
+1973-08-30,13:25,7.14,-72.76,6.3,MW,180.0,"Simacota, Santander",6.0,8.0,1973,8,Simacota,profundo,Alto
+1973-08-30,13:25,7.14,-72.76,6.3,MW,180.0,"Santa Cruz, Matanza-Santander",6.0,8.0,1973,8,Matanza,profundo,Alto
+1973-08-30,13:25,7.14,-72.76,6.3,MW,180.0,"Chipatá, Santander",6.0,8.0,1973,8,Chipatá,profundo,Alto
+1973-08-30,13:25,7.14,-72.76,6.3,MW,180.0,"Zapatoca, Santander",6.0,8.0,1973,8,Zapatoca,profundo,Alto
+1973-08-30,13:25,7.14,-72.76,6.3,MW,180.0,"Bucaramanga, Santander",6.5,8.0,1973,8,Bucaramanga,profundo,Alto
+1973-08-30,13:25,7.14,-72.76,6.3,MW,180.0,"Girón, Santander",6.5,8.0,1973,8,Girón,profundo,Alto
+1973-08-30,13:25,7.14,-72.76,6.3,MW,180.0,"Barrancabermeja, Santander",5.0,8.0,1973,8,Barrancabermeja,profundo,Medio
+1973-08-30,13:25,7.14,-72.76,6.3,MW,180.0,"La Paz, Santander",5.0,8.0,1973,8,La Paz,profundo,Medio
+1974-04-17,20:19,6.95,-72.95,5.2,MW,26.0,"Guaca, Santander",7.0,7.0,1974,4,Guaca,somero,Alto
+1974-04-17,20:19,6.95,-72.95,5.2,MW,26.0,"Santa Bárbara, Santander",7.0,7.0,1974,4,Santa Bárbara,somero,Alto
+1974-04-17,20:19,6.95,-72.95,5.2,MW,26.0,"Oiba, Santander",5.0,7.0,1974,4,Oiba,somero,Medio
+1974-04-17,20:19,6.95,-72.95,5.2,MW,26.0,"Cepitá, Santander",7.0,7.0,1974,4,Cepitá,somero,Alto
+1974-04-17,20:19,6.95,-72.95,5.2,MW,26.0,"Bucaramanga, Santander",6.0,7.0,1974,4,Bucaramanga,somero,Alto
+1974-04-17,20:19,6.95,-72.95,5.2,MW,26.0,"El Laurel, Cepitá-Santander",7.0,7.0,1974,4,Cepitá,somero,Alto
+1974-04-17,20:19,6.95,-72.95,5.2,MW,26.0,"San Gil, Santander",6.0,7.0,1974,4,San Gil,somero,Alto
+1974-04-17,20:19,6.95,-72.95,5.2,MW,26.0,"San Andrés, Santander",7.0,7.0,1974,4,San Andrés,somero,Alto
+1977-08-30,19:42,7.35,-76.14,6.5,MW,23.3,"Barrancabermeja, Santander",4.0,7.0,1977,8,Barrancabermeja,somero,Medio
+1977-08-30,19:42,7.35,-76.14,6.5,MW,23.3,"Bucaramanga, Santander",4.0,7.0,1977,8,Bucaramanga,somero,Medio
+1979-11-23,18:40,4.73,-76.16,7.2,MW,110.0,"Bucaramanga, Santander",5.0,8.0,1979,11,Bucaramanga,intermedio,Medio
+1979-11-23,18:40,4.73,-76.16,7.2,MW,110.0,"Barrancabermeja, Santander",4.0,8.0,1979,11,Barrancabermeja,intermedio,Medio
+1991-11-19,17:28,4.52,-77.33,7.2,MW,20.0,"Bucaramanga, Santander",2.0,8.0,1991,11,Bucaramanga,somero,Bajo
+1992-10-18,11:12,7.07,-76.8,7.1,MW,10.0,"Málaga, Santander",5.0,10.0,1992,10,Málaga,somero,Medio
+1992-10-18,11:12,7.07,-76.8,7.1,MW,10.0,"Oiba, Santander",4.0,10.0,1992,10,Oiba,somero,Medio
+1995-01-19,10:05,5.1,-72.89,6.5,MW,15.0,"San Joaquín, Santander",6.0,8.0,1995,1,San Joaquín,somero,Alto
+1995-01-19,10:05,5.1,-72.89,6.5,MW,15.0,"Palmas del Socorro, Santander",5.0,8.0,1995,1,Palmas del Socorro,somero,Medio
+1995-01-19,10:05,5.1,-72.89,6.5,MW,15.0,"Socorro, Santander",5.0,8.0,1995,1,Socorro,somero,Medio
+1995-01-19,10:05,5.1,-72.89,6.5,MW,15.0,"Bucaramanga, Santander",4.0,8.0,1995,1,Bucaramanga,somero,Medio
+1995-02-08,13:40,4.06,-76.56,6.4,MW,71.0,"Bucaramanga, Santander",4.0,8.0,1995,2,Bucaramanga,intermedio,Medio
+2008-05-24,14:20,4.44,-73.81,5.9,MW,10.0,"Bucaramanga, Santander",3.0,8.0,2008,5,Bucaramanga,somero,Bajo
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"San Joaquín, Santander",6.0,7.0,2015,3,San Joaquín,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"San Andrés, Santander",5.0,7.0,2015,3,San Andrés,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Rionegro, Santander",7.0,7.0,2015,3,Rionegro,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Suratá, Santander",7.0,7.0,2015,3,Suratá,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Piedecuesta, Santander",5.0,7.0,2015,3,Piedecuesta,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Onzaga, Santander",7.0,7.0,2015,3,Onzaga,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Tona, Santander",6.0,7.0,2015,3,Tona,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Vetas, Santander",6.0,7.0,2015,3,Vetas,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Villanueva, Santander",5.0,7.0,2015,3,Villanueva,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Matanza, Santander",7.0,7.0,2015,3,Matanza,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Los Santos, Santander",7.0,7.0,2015,3,Los Santos,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Zapatoca, Santander",6.0,7.0,2015,3,Zapatoca,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Lebrija, Santander",6.0,7.0,2015,3,Lebrija,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"El Carmen de Chucurí, Santander",5.0,7.0,2015,3,El Carmen de Chucurí,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"El Playón, Santander",7.0,7.0,2015,3,El Playón,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Curití, Santander",6.0,7.0,2015,3,Curití,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Concepción, Santander",5.0,7.0,2015,3,Concepción,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Chipatá, Santander",5.0,7.0,2015,3,Chipatá,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Cepitá, Santander",5.0,7.0,2015,3,Cepitá,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Floridablanca, Santander",5.0,7.0,2015,3,Floridablanca,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Gámbita, Santander",5.0,7.0,2015,3,Gámbita,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Carcasí, Santander",5.0,7.0,2015,3,Carcasí,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Galán, Santander",6.0,7.0,2015,3,Galán,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Bucaramanga, Santander",5.0,7.0,2015,3,Bucaramanga,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Girón, Santander",6.0,7.0,2015,3,Girón,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Betulia, Santander",7.0,7.0,2015,3,Betulia,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Barrancabermeja, Santander",6.0,7.0,2015,3,Barrancabermeja,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"California, Santander",6.0,7.0,2015,3,California,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Albania, Santander",5.0,7.0,2015,3,Albania,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Barichara, Santander",5.0,7.0,2015,3,Barichara,profundo,Medio
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Aratoca, Santander",6.0,7.0,2015,3,Aratoca,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"Guapotá, Santander",6.0,7.0,2015,3,Guapotá,profundo,Alto
+2015-03-10,15:55,6.825,-73.134,6.4,MW,157.7,"La Paz, Santander",5.0,7.0,2015,3,La Paz,profundo,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Tona, Santander",2.0,6.0,2020,4,Tona,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"San Gil, Santander",4.0,6.0,2020,4,San Gil,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Zapatoca, Santander",3.0,6.0,2020,4,Zapatoca,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Vélez, Santander",4.0,6.0,2020,4,Vélez,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Confines, Santander",2.0,6.0,2020,4,Confines,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Concepción, Santander",3.0,6.0,2020,4,Concepción,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Cimitarra, Santander",3.0,6.0,2020,4,Cimitarra,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Santa Bárbara, Santander",3.0,6.0,2020,4,Santa Bárbara,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Charta, Santander",4.0,6.0,2020,4,Charta,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Charalá, Santander",3.0,6.0,2020,4,Charalá,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Barbosa, Santander",3.0,6.0,2020,4,Barbosa,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Villanueva, Santander",4.0,6.0,2020,4,Villanueva,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Cepitá, Santander",2.0,6.0,2020,4,Cepitá,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Simacota, Santander",3.0,6.0,2020,4,Simacota,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Barichara, Santander",3.0,6.0,2020,4,Barichara,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Valle de San José, Santander",4.0,6.0,2020,4,Valle de San José,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Socorro, Santander",4.0,6.0,2020,4,Socorro,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"California, Santander",4.0,6.0,2020,4,California,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"San Andrés, Santander",3.0,6.0,2020,4,San Andrés,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Cabrera, Santander",4.0,6.0,2020,4,Cabrera,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Bucaramanga, Santander",4.0,6.0,2020,4,Bucaramanga,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Barrancabermeja, Santander",3.0,6.0,2020,4,Barrancabermeja,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Suaita, Santander",3.0,6.0,2020,4,Suaita,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Betulia, Santander",2.0,6.0,2020,4,Betulia,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Suratá, Santander",4.0,6.0,2020,4,Suratá,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Sabana de Torres, Santander",4.0,6.0,2020,4,Sabana de Torres,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Curití, Santander",3.0,6.0,2020,4,Curití,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Girón, Santander",4.0,6.0,2020,4,Girón,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Ocamonte, Santander",4.0,6.0,2020,4,Ocamonte,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Guaca, Santander",4.0,6.0,2020,4,Guaca,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Guadalupe, Santander",2.0,6.0,2020,4,Guadalupe,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Guapotá, Santander",3.0,6.0,2020,4,Guapotá,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"El Carmen de Chucurí, Santander",2.0,6.0,2020,4,El Carmen de Chucurí,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Oiba, Santander",3.0,6.0,2020,4,Oiba,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Galán, Santander",2.0,6.0,2020,4,Galán,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Jesús María, Santander",2.0,6.0,2020,4,Jesús María,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Palmar, Santander",3.0,6.0,2020,4,Palmar,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Gámbita, Santander",3.0,6.0,2020,4,Gámbita,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Matanza, Santander",4.0,6.0,2020,4,Matanza,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Piedecuesta, Santander",4.0,6.0,2020,4,Piedecuesta,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"La Paz, Santander",2.0,6.0,2020,4,La Paz,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Málaga, Santander",3.0,6.0,2020,4,Málaga,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Floridablanca, Santander",4.0,6.0,2020,4,Floridablanca,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"El Guacamayo, Santander",4.0,6.0,2020,4,El Guacamayo,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Los Santos, Santander",3.0,6.0,2020,4,Los Santos,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Rionegro, Santander",5.0,6.0,2020,4,Rionegro,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Lebrija, Santander",4.0,6.0,2020,4,Lebrija,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Puerto Wilches, Santander",3.0,6.0,2020,4,Puerto Wilches,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Páramo, Santander",4.0,6.0,2020,4,Páramo,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Puente Nacional, Santander",2.0,6.0,2020,4,Puente Nacional,intermedio_superior,Bajo
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"El Playón, Santander",4.0,6.0,2020,4,El Playón,intermedio_superior,Medio
+2020-04-15,05:59,9.017,-74.486,5.8,MW,50.0,"Landázuri, Santander",3.0,6.0,2020,4,Landázuri,intermedio_superior,Bajo
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Barichara, Santander",4.0,7.0,2023,8,Barichara,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Barbosa, Santander",4.0,7.0,2023,8,Barbosa,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Aratoca, Santander",4.0,7.0,2023,8,Aratoca,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Hato, Santander",3.0,7.0,2023,8,Hato,somero,Bajo
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Zapatoca, Santander",4.0,7.0,2023,8,Zapatoca,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Vélez, Santander",5.0,7.0,2023,8,Vélez,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Málaga, Santander",4.0,7.0,2023,8,Málaga,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Barrancabermeja, Santander",3.0,7.0,2023,8,Barrancabermeja,somero,Bajo
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Jesús María, Santander",4.0,7.0,2023,8,Jesús María,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"El Guacamayo, Santander",4.0,7.0,2023,8,El Guacamayo,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Ocamonte, Santander",4.0,7.0,2023,8,Ocamonte,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Los Santos, Santander",4.0,7.0,2023,8,Los Santos,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"San Gil, Santander",4.0,7.0,2023,8,San Gil,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Curití, Santander",5.0,7.0,2023,8,Curití,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Puerto Parra, Santander",4.0,7.0,2023,8,Puerto Parra,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Cimitarra, Santander",2.0,7.0,2023,8,Cimitarra,somero,Bajo
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Pinchote, Santander",4.0,7.0,2023,8,Pinchote,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Piedecuesta, Santander",4.0,7.0,2023,8,Piedecuesta,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Guadalupe, Santander",5.0,7.0,2023,8,Guadalupe,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Floridablanca, Santander",4.0,7.0,2023,8,Floridablanca,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Galán, Santander",4.0,7.0,2023,8,Galán,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Socorro, Santander",4.0,7.0,2023,8,Socorro,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Capitanejo, Santander",3.0,7.0,2023,8,Capitanejo,somero,Bajo
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Oiba, Santander",4.0,7.0,2023,8,Oiba,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Bucaramanga, Santander",4.0,7.0,2023,8,Bucaramanga,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Girón, Santander",4.0,7.0,2023,8,Girón,somero,Medio
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Bolívar, Santander",3.0,7.0,2023,8,Bolívar,somero,Bajo
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Florián, Santander",2.0,7.0,2023,8,Florián,somero,Bajo
+2023-08-17,12:04,4.42,-73.63,6.1,MW,13.0,"Albania, Santander",5.0,7.0,2023,8,Albania,somero,Medio
