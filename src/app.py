@@ -82,6 +82,8 @@ def construir_mapa(municipios, sismos, geo, ver_epicentros):
         key_on="feature.properties.clave",
         fill_color="RdYlGn_r",
         fill_opacity=0.7,
+        nan_fill_color="#f0f0f0",
+        nan_fill_opacity=0.4,
         line_opacity=0.4,
         bins=[-0.5, 0.5, 1.5, 2.5],
         legend_name="Nivel de riesgo sismico (0=Bajo, 2=Alto)",
@@ -112,8 +114,20 @@ def construir_mapa(municipios, sismos, geo, ver_epicentros):
     return mapa
 
 
+def contar_coincidencias(municipios, geo) -> int:
+    """Cuenta municipios del dataset que se pudieron cruzar con el GeoJSON."""
+    claves_dataset = set(municipios["municipio"].map(normalizar))
+    claves_geo = {normalizar(f["properties"].get("municipio", "")) for f in geo["features"]}
+    return len(claves_dataset & claves_geo)
+
+
 def pestana_mapa(municipios, sismos, geo):
     st.subheader("Mapa de riesgo sismico territorial")
+    if contar_coincidencias(municipios, geo) == 0:
+        st.error(
+            "No se pudieron cruzar los municipios con el GeoJSON, por eso el mapa "
+            "no colorea. Regenera el archivo con: python src/geo_prep.py"
+        )
     ver_epicentros = st.checkbox("Mostrar epicentros historicos", value=True)
     st_folium(construir_mapa(municipios, sismos, geo, ver_epicentros), height=560, use_container_width=True)
 

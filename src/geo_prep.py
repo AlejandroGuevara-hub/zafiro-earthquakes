@@ -36,10 +36,21 @@ def descargar() -> dict:
         return json.loads(respuesta.read().decode("utf-8"))
 
 
+def _tiene_municipios(geojson: dict) -> bool:
+    """True si las features traen un nombre de municipio util (no None)."""
+    for feature in geojson.get("features", []):
+        props = feature.get("properties", {})
+        if props.get("NOM_MPIO") or props.get("municipio"):
+            return True
+    return False
+
+
 def cargar() -> dict:
-    """Usa el GeoJSON local si existe; si no, lo descarga."""
+    """Usa el GeoJSON local si es valido; si esta vacio/corrupto, lo descarga."""
     if SALIDA.exists():
-        return json.loads(SALIDA.read_text(encoding="utf-8"))
+        local = json.loads(SALIDA.read_text(encoding="utf-8"))
+        if _tiene_municipios(local):
+            return local
     return descargar()
 
 
@@ -53,13 +64,16 @@ def _redondear(valor, decimales: int = 4):
 
 
 def simplificar(geojson: dict, decimales: int = 4) -> dict:
-    """Conserva solo las propiedades utiles y reduce la precision de las coordenadas."""
+    """Conserva solo las propiedades utiles y reduce la precision de las coordenadas.
+
+    Es idempotente: acepta tanto las claves originales del DANE (COD_MPIO/NOM_MPIO)
+    como las ya simplificadas (codigo/municipio), sin sobrescribir con None.
+    """
     for feature in geojson.get("features", []):
         props = feature.get("properties", {})
-        feature["properties"] = {
-            "codigo": props.get("COD_MPIO"),
-            "municipio": props.get("NOM_MPIO"),
-        }
+        municipio = props.get("NOM_MPIO") or props.get("municipio")
+        codigo = props.get("COD_MPIO") or props.get("codigo")
+        feature["properties"] = {"codigo": codigo, "municipio": municipio}
         geometria = feature.get("geometry")
         if geometria and "coordinates" in geometria:
             geometria["coordinates"] = _redondear(geometria["coordinates"], decimales)
