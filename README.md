@@ -71,12 +71,19 @@ streamlit run src/app.py
 - **242** filas (sismo-municipio), **24** sismos unicos, **73** municipios con registros.
 - Rango temporal: **1826 - 2023**.
 - Niveles de riesgo (KMeans, k=3): **Alto 25 / Medio 37 / Bajo 11** municipios.
-- Silhouette (k=3): **0.452**. PCA(2) explica **~100%** de la varianza
+- Silhouette (k=3): **0.452**. Es el valor mas bajo del barrido (k=2 da 0.581);
+  se elige k=3 por **interpretabilidad** (tres niveles), no por ser el optimo.
+- PCA(2) se usa solo para **graficar** los grupos: como el modelo tiene 2
+  variables, 2 componentes conservan toda la varianza por construccion
   (91.3% + 8.7%).
 - Lectura territorial: los municipios de **riesgo Alto** se concentran en el
-  centro-montanoso de Santander (area del Nido: Betulia, Zapatoca, Los Santos,
+  centro-montanoso de Santander (area del Nido: Betulia, Zapatoca, Matanza,
   San Joaquin, etc.); los de **riesgo Bajo** estan en el Magdalena Medio
   (Sabana de Torres, Puerto Wilches, Cimitarra...).
+- **Los Santos** queda en nivel **Medio** (intensidad media 5.25, maxima 7): dos
+  sismos lejanos (2020 y 2023) se sintieron debil alli y bajan su promedio.
+- El dashboard tiene 4 pestanas: **Mapa**, **Analisis**, **Municipio** (ficha e
+  historial) y **Simulador** (clasifica un caso con `models/segmentacion.pkl`).
 
 ## Documentacion
 

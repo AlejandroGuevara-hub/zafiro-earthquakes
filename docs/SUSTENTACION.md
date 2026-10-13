@@ -29,6 +29,10 @@ probables con sus respuestas.
      epicentros historicos encima.
    - Pestana **Analisis**: municipios por nivel, boxplot de intensidad, scatter PCA,
      tabla de k y ranking de municipios.
+   - Pestana **Municipio**: ficha de un municipio (nivel, distancia a cada
+     centroide e historial de sismos). Buen ejemplo: Los Santos.
+   - Pestana **Simulador**: mover las intensidades y ver como el modelo guardado
+     (`segmentacion.pkl`) asigna el nivel en vivo.
 
 ## Reparto sugerido (3 personas)
 
@@ -42,8 +46,9 @@ probables con sus respuestas.
 
 - 242 filas (sismo-municipio), 24 sismos unicos, 73 municipios, 1826-2023.
 - Clustering: KMeans, k=3, `random_state=42` (reproducible).
-- Silhouette (k=3) = 0.452; codo en k=3.
-- PCA(2): 91.3% + 8.7% de varianza.
+- Silhouette (k=3) = 0.452 (el mas bajo del barrido; k=2 da 0.581); codo en k=3.
+- PCA(2): 91.3% + 8.7% de varianza. Solo sirve para graficar: con 2 variables,
+  2 componentes siempre suman 100%.
 - Niveles: Alto 25 / Medio 37 / Bajo 11.
 
 ## Preguntas probables y respuestas
@@ -58,7 +63,18 @@ e interpretacion. K-Means descubre los grupos a partir de los propios datos.
 
 **¿Por que k=3 y no otro numero?**
 Para obtener tres niveles interpretables (Alto/Medio/Bajo). El metodo del codo
-cae fuerte en k=3 y el silhouette ahi es razonable (0.452).
+cae fuerte en k=3. Por silhouette el mejor seria k=2 (0.581 frente a 0.452),
+pero dos grupos no dejan un nivel intermedio: priorizamos interpretabilidad.
+
+**¿Por que Los Santos, que esta sobre el Nido, no sale en Alto?**
+Queda en Medio porque tiene solo 4 registros (intensidades 7, 7, 4 y 3): los
+sismos lejanos de 2020 y 2023 bajan su promedio a 5.25. Es una limitacion de
+usar la intensidad media con pocos eventos, y la mostramos en la pestana
+"Municipio".
+
+**¿El modelo entrenado se usa en el dashboard?**
+Si. La pestana "Simulador" carga `segmentacion.pkl` y clasifica cualquier caso
+nuevo: lo estandariza y le asigna el nivel del centroide mas cercano.
 
 **¿Que es el silhouette?**
 Una metrica (-1 a 1) que mide que tan separados y compactos quedan los grupos.

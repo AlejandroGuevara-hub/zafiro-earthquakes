@@ -5,6 +5,8 @@ Pestanas:
                con capa opcional de epicentros historicos.
     Analisis-> tamanos de cluster, boxplot de intensidad, scatter PCA,
                barrido de k (codo/silhouette) y ranking de municipios.
+    Municipio-> ficha de un municipio: nivel, por que quedo ahi e historial de sismos.
+    Simulador-> clasifica un caso nuevo con el modelo entrenado (segmentacion.pkl).
 
 Ejecutar: streamlit run src/app.py
 """
@@ -16,6 +18,7 @@ import unicodedata
 from pathlib import Path
 
 import folium
+import joblib
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -27,11 +30,13 @@ RUTA_MUN = BASE / "datos" / "municipios_segmentados.csv"
 RUTA_SISMOS = BASE / "datos" / "sismos_clean.csv"
 RUTA_GEO = BASE / "datos" / "municipios_santander.geojson"
 RUTA_METRICAS = BASE / "datos" / "metricas_clustering.csv"
+RUTA_MODELO = BASE / "models" / "segmentacion.pkl"
 
 ORDEN = ["Alto", "Medio", "Bajo"]
 COLORES = {"Alto": "#d73027", "Medio": "#fee08b", "Bajo": "#1a9850"}
 RIESGO_NUM = {"Bajo": 0, "Medio": 1, "Alto": 2}
 CENTRO_SANTANDER = [6.6, -73.2]
+MIN_EVENTOS_CONFIABLE = 3
 
 
 def normalizar(texto: str) -> str:
@@ -48,6 +53,35 @@ def cargar():
     metricas = pd.read_csv(RUTA_METRICAS)
     geo = json.loads(RUTA_GEO.read_text(encoding="utf-8"))
     return municipios, sismos, metricas, geo
+
+
+@st.cache_resource
+def cargar_modelo():
+    """Carga el modelo entrenado (scaler + kmeans + pca) generado por segmentar.py."""
+    return joblib.load(RUTA_MODELO)
+
+
+def niveles_por_cluster(municipios) -> dict:
+    """Relaciona cada cluster de KMeans con su nivel (Alto / Medio / Bajo)."""
+    pares = municipios.drop_duplicates("cluster")
+    return {int(c): n for c, n in zip(pares["cluster"], pares["nivel_riesgo"])}
+
+
+def clasificar(modelo, niveles, intensidad_media, intensidad_max):
+    """Aplica scaler + KMeans a un caso y devuelve (nivel, tabla de centroides y distancias)."""
+    Xs = modelo["scaler"].transform([[intensidad_media, intensidad_max]])
+    cluster = int(modelo["kmeans"].predict(Xs)[0])
+    distancias = modelo["kmeans"].transform(Xs)[0]
+    centroides = modelo["scaler"].inverse_transform(modelo["kmeans"].cluster_centers_)
+    tabla = pd.DataFrame(
+        {
+            "nivel": [niveles[c] for c in range(len(distancias))],
+            "centroide_intensidad_media": centroides[:, 0].round(2),
+            "centroide_intensidad_max": centroides[:, 1].round(2),
+            "distancia": distancias.round(3),
+        }
+    )
+    return niveles[cluster], tabla.set_index("nivel").reindex(ORDEN).reset_index()
 
 
 def construir_mapa(municipios, sismos, geo, ver_epicentros):
@@ -174,6 +208,84 @@ def pestana_analisis(municipios, metricas, n_sismos, silhouette):
     )
 
 
+def pestana_municipio(municipios, sismos, modelo, niveles):
+    st.subheader("Ficha por municipio")
+    nombre = st.selectbox("Municipio", sorted(municipios["municipio"]))
+    fila = municipios.loc[municipios["municipio"] == nombre].iloc[0]
+
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Nivel de riesgo", fila["nivel_riesgo"])
+    col2.metric("Eventos registrados", int(fila["n_eventos"]))
+    col3.metric("Intensidad media (EMS-98)", f"{fila['intensidad_media']:.1f}")
+    col4.metric("Intensidad maxima (EMS-98)", f"{fila['intensidad_max']:.0f}")
+
+    if fila["n_eventos"] < MIN_EVENTOS_CONFIABLE:
+        st.warning(
+            f"Baja confianza: solo {int(fila['n_eventos'])} evento(s) registrado(s). "
+            "El nivel puede cambiar mucho con un solo reporte adicional."
+        )
+
+    _, distancias = clasificar(modelo, niveles, fila["intensidad_media"], fila["intensidad_max"])
+    st.markdown("**Por que quedo en este nivel**")
+    st.caption(
+        "KMeans asigna el municipio al centroide mas cercano (menor distancia) "
+        "en el espacio estandarizado de intensidad media y maxima."
+    )
+    st.dataframe(distancias, width="stretch", hide_index=True)
+
+    st.markdown("**Historial de sismos sentidos en el municipio**")
+    historial = sismos.loc[sismos["municipio_base"] == nombre].sort_values("fecha", ascending=False)
+    st.dataframe(
+        historial[["fecha", "municipio", "magnitud", "profundidad_km", "intensidad_sitio", "intensidad_max"]].rename(
+            columns={
+                "municipio": "centro_poblado",
+                "intensidad_sitio": "intensidad_en_el_sitio",
+                "intensidad_max": "intensidad_max_del_sismo",
+            }
+        ),
+        width="stretch",
+        hide_index=True,
+    )
+
+
+def pestana_simulador(municipios, modelo, niveles):
+    st.subheader("Simulador: clasifica un caso con el modelo entrenado")
+    st.caption(
+        "Usa el KMeans guardado en models/segmentacion.pkl: estandariza el caso "
+        "y le asigna el nivel del centroide mas cercano."
+    )
+
+    col1, col2 = st.columns(2)
+    intensidad_max = col1.slider("Intensidad maxima registrada (EMS-98)", 1.0, 12.0, 6.0, 0.5)
+    intensidad_media = col2.slider("Intensidad media (EMS-98)", 1.0, 12.0, 5.0, 0.1)
+    if intensidad_media > intensidad_max:
+        st.warning("La intensidad media no puede superar la maxima; se usa el valor de la maxima.")
+        intensidad_media = intensidad_max
+    if not municipios["intensidad_max"].min() <= intensidad_max <= municipios["intensidad_max"].max():
+        st.info(
+            "Este caso esta fuera del rango con el que se entreno el modelo "
+            f"(intensidad maxima entre {municipios['intensidad_max'].min():.0f} y "
+            f"{municipios['intensidad_max'].max():.0f}); el resultado es una extrapolacion."
+        )
+
+    nivel, distancias = clasificar(modelo, niveles, intensidad_media, intensidad_max)
+    st.metric("Nivel asignado por el modelo", nivel)
+
+    izq, der = st.columns(2)
+    with izq:
+        st.markdown("**Distancia a cada centroide**")
+        st.dataframe(distancias, width="stretch", hide_index=True)
+    with der:
+        st.markdown("**El caso frente a los municipios reales**")
+        fig, ax = plt.subplots(figsize=(5, 3.5))
+        sns.scatterplot(data=municipios, x="intensidad_media", y="intensidad_max", hue="nivel_riesgo", palette=COLORES, hue_order=ORDEN, s=50, ax=ax)
+        ax.scatter([intensidad_media], [intensidad_max], marker="*", s=260, color="black", label="Caso simulado")
+        ax.set_xlabel("Intensidad media (EMS-98)")
+        ax.set_ylabel("Intensidad maxima (EMS-98)")
+        ax.legend(title="")
+        st.pyplot(fig)
+
+
 def main():
     st.set_page_config(page_title="Riesgo sismico de Santander", layout="wide")
     st.title("Clasificacion del riesgo sismico de Santander")
@@ -184,11 +296,18 @@ def main():
     fila_k3 = metricas.loc[metricas["k"] == 3, "silhouette"]
     silhouette = float(fila_k3.iloc[0]) if not fila_k3.empty else float("nan")
 
-    tab_mapa, tab_analisis = st.tabs(["Mapa", "Analisis"])
+    modelo = cargar_modelo()
+    niveles = niveles_por_cluster(municipios)
+
+    tab_mapa, tab_analisis, tab_municipio, tab_simulador = st.tabs(["Mapa", "Analisis", "Municipio", "Simulador"])
     with tab_mapa:
         pestana_mapa(municipios, sismos, geo)
     with tab_analisis:
         pestana_analisis(municipios, metricas, n_sismos, silhouette)
+    with tab_municipio:
+        pestana_municipio(municipios, sismos, modelo, niveles)
+    with tab_simulador:
+        pestana_simulador(municipios, modelo, niveles)
 
 
 if __name__ == "__main__":
