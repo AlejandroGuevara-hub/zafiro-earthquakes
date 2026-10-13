@@ -73,6 +73,11 @@ archivo. Util para la sustentacion: aqui esta "que hace y por que" cada pieza.
 | `construir_mapa(...)` | Arma el mapa folium: coropleta por nivel + tooltip + epicentros. |
 | `pestana_mapa(...)` | Renderiza la pestana "Mapa" del dashboard. |
 | `pestana_analisis(...)` | Renderiza la pestana "Analisis" (graficas y tablas). |
+| `cargar_modelo()` | Carga con cache `models/segmentacion.pkl` (scaler + kmeans + pca). |
+| `niveles_por_cluster(municipios)` | Relaciona cada cluster de KMeans con su nivel (Alto/Medio/Bajo). |
+| `clasificar(modelo, niveles, media, max)` | Estandariza un caso, predice su nivel y calcula la distancia a cada centroide. |
+| `pestana_municipio(...)` | Renderiza la pestana "Municipio": ficha, explicacion del nivel e historial. |
+| `pestana_simulador(...)` | Renderiza la pestana "Simulador": clasifica un caso nuevo con el modelo. |
 | `main()` | Configura la pagina y organiza las pestanas. |
 
 **Elementos de folium/streamlit usados:** `folium.Map`, `folium.Choropleth`
